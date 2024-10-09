@@ -903,7 +903,7 @@ class Plugin {
 
 	    $actions['backend'] = sprintf(
 		    '<a href="%1$s" class="edit">%2$s</a>',
-		    esc_url( get_admin_url( $blog_id, '/' . $this->new_login_slug() ) ),
+		    esc_url( get_site_url( $blog_id, $this->new_login_slug() ) ),
 		    __( 'Dashboard' )
 	    );
 
